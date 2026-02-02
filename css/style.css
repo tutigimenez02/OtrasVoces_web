@@ -55,7 +55,7 @@ nav ul {
   display: flex;       
   justify-content: center;
   flex-wrap: wrap;     
-  gap: 10px;          
+  gap: 10px;           
 }
 
 nav ul li a {
@@ -76,6 +76,12 @@ nav ul li a:hover {
 
 /* --- MAIN LAYOUTS --- */
 
+/* ==========================================================================
+   BLOQUE REGISTRO COMENTADO
+   Se comenta todo este bloque para que no interfiera con BOOTSTRAP.
+   ==========================================================================
+*/
+/*
 #seccion-registro {
   padding: 60px 20px;
   background-color: white;
@@ -186,7 +192,15 @@ nav ul li a:hover {
     height: 120px;
   }
 }
+*/
+/* FIN DEL BLOQUE REGISTRO COMENTADO */
 
+
+/* ==========================================================================
+   BLOQUE DUPLICADO COMENTADO
+   ==========================================================================
+*/
+/*
 .contenedor-registro {
   width: 80%;
   margin: 0 auto;
@@ -203,13 +217,17 @@ nav ul li a:hover {
 .columna-derecha {
   width: 70%;
 }
+*/
+/* FIN DEL BLOQUE DUPLICADO */
+
+
+/* --- RESTO DE LOS ESTILOS (INDEX, REPRODUCTOR, ETC) --- */
 
 #interaccion-usuario {
   display: flex;   
   width: 100%;     
   align-items: stretch; 
 }
-
 
 .columna-comentarios {
   background-color: red;
@@ -226,7 +244,6 @@ nav ul li a:hover {
   gap: 10px;               
   margin-bottom: 15px;
 }
-
 
 .info-usuario-post img {
   width: 50px;         
@@ -257,7 +274,7 @@ nav ul li a:hover {
 }
 
 .contenedor-link-app {
-    width: 100%;
+   width: 100%;
 }
 
 .contenedor-link-app img {
@@ -295,12 +312,39 @@ nav ul li a:hover {
 .flecha-nav.anterior { left: 40px; top: 50%; transform: translateY(-50%); position: absolute;}
 .flecha-nav.siguiente { right: 40px; top: 50%; transform: translateY(-50%); position: absolute;}
 
+
+/* ==========================================================================
+   ESTILOS DE LISTA PROGRAMAS
+   Mantenemos el contenedor pero comentamos los botones para usar BOOTSTRAP
+   ==========================================================================
+*/
 #lista-programas {
   background-color: white;
   padding: 40px;
   text-align: center;
   border-bottom: 2px solid black;
 }
+
+/* ESTILOS VIEJOS DE BOTONES (COMENTADOS)
+Ahora usamos clases como 'btn btn-dark' o 'btn btn-danger' en el HTML.
+
+#lista-programas button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#lista-programas button:hover {
+  background-color: black;
+  color: white;
+}
+*/
+/* FIN COMENTARIO BOTONES */
+
 
 #reproductor-radio {
   background-color: #eee;
@@ -325,6 +369,22 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 .btn-play img { width: 60px; height: 60px; }
+
+/* COMENTAMOS TAMBIEN EL BOTON PUBLICAR MANUAL (CONTACTO) 
+Para usar Bootstrap allí también
+*/
+/*
+.btn-publicar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+}
+*/
 
 .caja-texto-comentario {
   background-color: white;
@@ -363,9 +423,9 @@ footer {
 }
 
 iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    border: 0;
-    margin-top: 20px;
+   width: 100%;
+   max-width: 600px;
+   height: 300px;
+   border: 0;
+   margin-top: 20px;
 }
