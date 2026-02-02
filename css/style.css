@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  border-bottom: 5px solid red;
+  text-align: center;
+}
+
+.header-top {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.logo-principal img {
+  padding: 10px;
+  max-width: 150px;
+}
+
+.user-icon {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid red;
+  font-weight: bold;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: red;
+  color: white;
+}
+
+#carrusel-programas {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.contenido-destacado img {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.flecha-nav {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.flecha-nav.anterior {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flecha-nav.siguiente {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#lista-programas {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+#lista-programas button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#lista-programas button:hover {
+  background-color: black;
+  color: white;
+}
+
+#reproductor-radio {
+  background-color: #eee;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contenedor-reproductor {
+  border: 2px solid black;
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+  width: 80%;
+}
+
+.btn-play {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 1px 2px;
+  font-size: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.btn-play img {
+  width: 100px;
+  height: 100px;
+}
+
+.barra-progreso input {
+  width: 80%;
+}
+
+#interaccion-usuario .info-usuario-post img {
+  width: 30px;
+  height: 30px;
+}
+
+.columna-comentarios {
+  background-color: red;
+  color: white;
+  width: calc(100% - 80px);
+  padding: 40px;
+  text-align: center;
+}
+
+.caja-texto-comentario {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.columna-app {
+  background-color: black;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.columna-app img {
+  width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.contenedor-link-app {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.contenedor-link-app img {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.circulo-link {
+  background-color: white;
+  color: red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  border: 5px solid red;
+  text-align: center;
+  line-height: 150px;
+}
+
+.limpiar-flotados {
+  clear: both;
+}
+
+#muro-comentarios {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+#muro-comentarios h2 {
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.nuevo-mensaje {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.usuario-cabecera {
+  margin-bottom: 10px;
+}
+
+.icono-gris img {
+  width: 30px;
+  height: 30px;
+}
+
+.nombre-usuario {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #555;
+}
+
+.nuevo-mensaje textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  resize: none;
+}
+
+.btn-publicar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+}
+
+.mensajes-anteriores {
+  width: 100%;
+}
+
+.mensaje-item {
+  width: 45%;
+  float: left;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mensaje-item.izquierda {
+  margin-right: 5%;
+  margin-left: 2.5%;
+}
+
+.mensaje-item.derecha {
+  margin-left: 2.5%;
+}
+
+.limpiar {
+  clear: both;
+}
+
+#seccion-registro {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.contenedor-registro {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.columna-izquierda {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+.columna-derecha {
+  width: 65%;
+  float: left;
+  margin-left: 5%;
+}
+
+.marco-foto img {
+  width: 150px;
+  height: 150px;
+  background-color: #e6eef2;
+  border-radius: 50%;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+#seccion-registro input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #e6eef2;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-registrar {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-top: 5px solid red;
+}
+
+.footer-sociales ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-sociales li {
+  margin: 10px 0;
+}
+
+.footer-sociales img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.footer-sociales a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.footer-contacto a {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.circulo-logo {
+  margin-top: 20px;
+  font-weight: bold;
+}
