@@ -9,19 +9,20 @@
   <body>
     <header>
       <div class="header-top">
+        <h1 class="titulo-principal-oculto">Crear Cuenta de Usuario</h1>
         <div class="logo-principal">
-          <img src="../img/logo.png" alt="LOGO" />
+          <img src="../img/logo.png" alt="Logotipo Otras Voces FM" />
         </div>
       </div>
 
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/programas.html">Programas</a></li>
-          <li><a href="../pages/reproductor.html">Reproductor</a></li>
-          <li><a href="../pages/app.html">App</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-          <li><a href="../pages/registro.html">Registro</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="reproductor.html">Reproductor</a></li>
+          <li><a href="app.html">App</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="registro.html" class="activo">Registro</a></li>
         </ul>
       </nav>
     </header>
@@ -33,7 +34,7 @@
         <div class="contenedor-registro">
           <div class="columna-izquierda">
             <div class="marco-foto">
-              <img src="../img/masculino.png" alt="Foto Perfil" />
+              <img src="../img/masculino.png" alt="Avatar por defecto para previsualizar foto de perfil" />
             </div>
             <p class="texto-foto">FOTO DE PERFIL</p>
             <button type="button" class="btn-subir-foto">SUBIR FOTO</button>
@@ -42,8 +43,10 @@
           <div class="columna-derecha">
             <form action="#" method="POST">
               <div class="grupo-input">
+                <label for="nombre" class="titulo-principal-oculto">Nombre Completo</label>
                 <input
                   type="text"
+                  id="nombre"
                   name="nombre"
                   placeholder="NOMBRE Y APELLIDO"
                   required
@@ -51,25 +54,31 @@
               </div>
 
               <div class="grupo-input">
+                 <label for="email" class="titulo-principal-oculto">Email</label>
                 <input
                   type="email"
+                  id="email"
                   name="email"
-                  placeholder="CORREO ELECTRONICO"
+                  placeholder="CORREO ELECTRÓNICO"
                   required
                 />
               </div>
 
               <div class="grupo-input">
+                 <label for="celular" class="titulo-principal-oculto">Celular</label>
                 <input
                   type="tel"
+                  id="celular"
                   name="celular"
-                  placeholder="NUMERO DE CELULAR"
+                  placeholder="NÚMERO DE CELULAR"
                 />
               </div>
 
               <div class="grupo-input">
+                 <label for="usuario" class="titulo-principal-oculto">Nombre de Usuario</label>
                 <input
                   type="text"
+                  id="usuario"
                   name="usuario"
                   placeholder="NOMBRE DE USUARIO"
                   required
@@ -79,8 +88,6 @@
               <button type="submit" class="btn-registrar">REGISTRARSE</button>
             </form>
           </div>
-
-          <div class="limpiar-flotados"></div>
         </div>
       </section>
     </main>
@@ -89,25 +96,24 @@
       <div class="footer-sociales">
         <ul>
           <li>
-            <img src="../img/facebook.png" alt="icon" />
+            <img src="../img/facebook.png" alt="" />
             <a href="#">FACEBOOK</a>
           </li>
           <li>
-            <img src="../img/youtube.png" alt="icon" /> <a href="#">YOUTUBE</a>
+            <img src="../img/youtube.png" alt="" /> <a href="#">YOUTUBE</a>
           </li>
           <li>
-            <img src="../img/whatsapp.png" alt="icon" />
+            <img src="../img/whatsapp.png" alt="" />
             <a href="#">WHATSAPP</a>
           </li>
           <li>
-            <img src="../img/instagram.png" alt="icon" />
+            <img src="../img/instagram.png" alt="" />
             <a href="#">INSTAGRAM</a>
           </li>
         </ul>
       </div>
-
       <div class="footer-contacto">
-        <a href="pages/contacto.html">CONTACTANOS</a>
+        <a href="contacto.html">CONTACTANOS</a>
       </div>
     </footer>
   </body>

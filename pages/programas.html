@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Otras Voces Fm</title>
+    <title>Programas - Otras Voces Fm</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <div class="header-top">
+        <h1 class="titulo-principal-oculto">Grilla de Programación</h1>
         <div class="logo-principal">
-          <img src="../img/logo.png" alt="LOGO" />
+          <img src="../img/logo.png" alt="Logotipo Otras Voces FM" />
         </div>
         <div class="user-icon">
-          <img src="../img/masculino.png" alt="Usuario" />
+          <img src="../img/masculino.png" alt="Perfil de usuario" />
         </div>
       </div>
 
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="pages/programas.html">Programas</a></li>
-          <li><a href="pages/reproductor.html">Reproductor</a></li>
-          <li><a href="pages/app.html">App</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="programas.html" class="activo">Programas</a></li>
+          <li><a href="reproductor.html">Reproductor</a></li>
+          <li><a href="app.html">App</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
           <li><a href="registro.html">Registro</a></li>
         </ul>
       </nav>
@@ -31,32 +32,30 @@
 
     <main>
       <section id="carrusel-programas">
-        <button class="flecha-nav anterior">&#10094;</button>
+        <button class="flecha-nav anterior" aria-label="Ver programa anterior">❮</button>
         <div class="contenido-destacado">
           <figure>
-            <img src="../img/imagen-programa.jpg" alt="Imagen del Programa" />
+            <img src="../img/imagen-programa.jpg" alt="Foto promocional del programa destacado del mes" />
             <figcaption>
-              <h3>NOMBRE DE LOS PROGRAMAS</h3>
-              <p>
-                (IMAGENES DE LOS PROGRAMAS Y/O SUS CONDUCTORES QUE VAN ROTANDO)
-              </p>
+              <h3>LA MAÑANA INFORMATIVA</h3>
+              <p>Conducción: María González - Lunes a Viernes 9hs</p>
             </figcaption>
           </figure>
         </div>
-
-        <button class="flecha-nav siguiente">&#10095;</button>
+        <button class="flecha-nav siguiente" aria-label="Ver programa siguiente">❯</button>
       </section>
+
       <section id="lista-programas">
         <h3>Información adicional de los programas</h3>
-        <button>Programa 1</button>
-        <button>Programa 2</button>
-        <button>Programa 3</button>
-        <button>Programa 4</button>
-        <button>Programa 5</button>
-        <button>Programa 6</button>
-        <button>Programa 7</button>
-        <button>Programa 8</button>
-        <button>Programa 9</button>
+        <button type="button">Deportes al Día</button>
+        <button type="button">Rock Nacional</button>
+        <button type="button">Folklore Vivo</button>
+        <button type="button">Noticias Flash</button>
+        <button type="button">Entrevistas</button>
+        <button type="button">Música del Recuerdo</button>
+        <button type="button">Salud y Bienestar</button>
+        <button type="button">Tecnología Hoy</button>
+        <button type="button">Cierre de Transmisión</button>
       </section>
     </main>
 
@@ -64,25 +63,25 @@
       <div class="footer-sociales">
         <ul>
           <li>
-            <img src="../img/facebook.png" alt="icon" />
+            <img src="../img/facebook.png" alt="" />
             <a href="#">FACEBOOK</a>
           </li>
           <li>
-            <img src="../img/youtube.png" alt="icon" /> <a href="#">YOUTUBE</a>
+            <img src="../img/youtube.png" alt="" /> <a href="#">YOUTUBE</a>
           </li>
           <li>
-            <img src="../img/whatsapp.png" alt="icon" />
+            <img src="../img/whatsapp.png" alt="" />
             <a href="#">WHATSAPP</a>
           </li>
           <li>
-            <img src="../img/instagram.png" alt="icon" />
+            <img src="../img/instagram.png" alt="" />
             <a href="#">INSTAGRAM</a>
           </li>
         </ul>
       </div>
 
       <div class="footer-contacto">
-        <a href="pages/contacto.html">CONTACTANOS</a>
+        <a href="contacto.html">CONTACTANOS</a>
       </div>
     </footer>
   </body>

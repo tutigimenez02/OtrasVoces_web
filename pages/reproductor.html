@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Otras Voces Fm</title>
+    <title>Reproductor - Otras Voces Fm</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <div class="header-top">
+        <h1 class="titulo-principal-oculto">Escuchá en Vivo</h1>
         <div class="logo-principal">
-          <img src="../img/logo.png" alt="LOGO" />
+          <img src="../img/logo.png" alt="Logotipo" />
         </div>
         <div class="user-icon">
-          <img src="../img/masculino.png" alt="Usuario" />
+          <img src="../img/masculino.png" alt="Perfil" />
         </div>
       </div>
 
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/programas.html">Programas</a></li>
-          <li><a href="../pages/reproductor.html">Reproductor</a></li>
-          <li><a href="../pages/app.html">App</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="reproductor.html">Reproductor</a></li>
+          <li><a href="app.html">App</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
           <li><a href="registro.html">Registro</a></li>
         </ul>
       </nav>
@@ -31,42 +32,45 @@
 
     <main>
       <section id="reproductor-radio">
+        <h2>Transmisión en Vivo</h2>
         <div class="contenedor-reproductor">
           <button class="btn-play">
-            <img src="../img/play-button.png" alt="Play" />
+            <img src="../img/play-button.png" alt="Botón Play" />
           </button>
-
           <div class="barra-progreso">
-            <input type="range" min="0" max="100" value="0" />
+            <input type="range" min="0" max="100" value="50" aria-label="Control de volumen" />
           </div>
         </div>
       </section>
     </main>
 
     <footer>
+      <footer>
       <div class="footer-sociales">
         <ul>
           <li>
-            <img src="../img/facebook.png" alt="icon" />
+            <img src="../img/facebook.png" alt="Icono Facebook" />
             <a href="#">FACEBOOK</a>
           </li>
           <li>
-            <img src="../img/youtube.png" alt="icon" /> <a href="#">YOUTUBE</a>
+            <img src="../img/youtube.png" alt="Icono Youtube" />
+            <a href="#">YOUTUBE</a>
           </li>
           <li>
-            <img src="../img/whatsapp.png" alt="icon" />
+            <img src="../img/whatsapp.png" alt="Icono Whatsapp" />
             <a href="#">WHATSAPP</a>
           </li>
           <li>
-            <img src="../img/instagram.png" alt="icon" />
+            <img src="../img/instagram.png" alt="Icono Instagram" />
             <a href="#">INSTAGRAM</a>
           </li>
         </ul>
       </div>
 
       <div class="footer-contacto">
-        <a href="pages/contacto.html">CONTACTANOS</a>
+        <a href="contacto.html">CONTACTANOS</a>
       </div>
+    </footer>
     </footer>
   </body>
 </html>
